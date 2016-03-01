@@ -1,3 +1,4 @@
+require "thor"
 require "stringex"
 class Jekyll < Thor
   desc "new", "create a new post"
