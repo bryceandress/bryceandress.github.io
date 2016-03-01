@@ -17,7 +17,7 @@ github_username:  bryceandress
 facebook_username: xxbryce10xx
 
 # Gems
-gems: 
+gems:
 - jekyll-archives
 - jekyll-paginate
 
