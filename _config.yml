@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bryceandress.github.io" # the base hostname & protocol for your site
 twitter_username: bryceandress
 github_username:  bryceandress
-facebook_username:  xxbryce10xx
+facebook_username: xxbryce10xx
 
 # Gems
 gems: 
