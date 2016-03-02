@@ -2,7 +2,6 @@
 layout: post
 title: Cowrie-Findings
 categories: project
-comments: true
 ---
 At the end of the last [post](https://bryceandress.github.io/2016/02/25/HoneyPot-Shenanigans-with-Cowrie/)
  I stated that I would report my findings if anything interesting did happen. I left the server run for 
