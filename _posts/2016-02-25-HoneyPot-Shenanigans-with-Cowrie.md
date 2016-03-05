@@ -12,7 +12,7 @@ admin to configure it so he can log back in to check out logs. The install proce
 and creating a droplet that would be used for nothing else but this, for
 obvious safety reasons. After the droplet was created I ssh'd into the
 machine and got to work. The cowrie install.md file has all the
-information you will need to get it up and running, but if you runn into
+information you will need to get it up and running, but if you run into
 any issues this [article](https://sehque.wordpress.com/2015/07/23/how-to-configure-and-deploy-a-cowrie-ssh-honeypot-for-beginners) should be able to help. The only mistake I made was closing my ssh connection while cowrie was running without an
 admin port to allow myself back in. After destroying the droplet
 and getting everything to the point right before running I created a
