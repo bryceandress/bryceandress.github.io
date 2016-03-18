@@ -9,6 +9,6 @@ when it removes programs. So after so quick Googling of the available
 pacman commands I came up with this awesome one liner that removes all
 dependencies that are not needed anymore.
 
-[code]
+```
 pacman -Rns $(pacman -Qtdq)
-[/code]
+```
