@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Favrote Pacman One Liner
+title: Favorite Pacman One Liner
 ---
 
 Today while doing some system maintenance I realized that I have
