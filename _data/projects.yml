@@ -1,7 +1,3 @@
-- name: Fatso
-  category: theme
-  url: https://github.com/getmicah/fatso
-
-- name: Beam
-  category: theme
-  url: https://github.com/getmicah/beam
+- name: To-do
+  category: Script
+  url: https://github.com/bryceandress/Projects/blob/master/todo

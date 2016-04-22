@@ -2,19 +2,13 @@
 layout: about
 ---
 
-Hello, my name is Micah Cowell. I'm 17 years old living in Washington state. I like the internet, hip hop, and over-priced yo-yos. I make websites in the way I see most appealing and write code to put on Github.
-
-[//]: # # What is with the website url?
-[//]: # The url hac.im is just my name backwards.
+Hello, my name is Bryce. I am studying Computer Science at a local community college and in the fall I plan to attend Kutztown to continue studying Computer Science. This website is to showcase some of my projects, studies, and write-ups I do for CTF events.
 
 # What do you do?
-I write code
+Study, Code, Counter Strike, CTF, and most importantly Eat...a lot.
 
-# Who are your favorite artists?
-I currently like Oshi, Anderson Paak, and Common.
+# What are your short term goals?
+Graduate school in the next 3 years, hopefully with a Masters in Computer Science and a focus in Security.
 
-# What programming languages do you use?
-I like using Javascript and Sass when making websites but I also like Python and Haskell.
-
-# Which sports teams do you follow?
-I like following the Mariners but hate watching baseball. University of Washington football and basketball. Waiting for the Supersonics.
+# Okay, how about long term?
+I eventually plan on opening up my own security consulting firm
