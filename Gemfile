@@ -1,4 +1,3 @@
 source 'https://rubygems.org'
-gem 'thor'
-gem 'stringex'
-gem 'json'
+gem 'jekyll'
+gem 'jekyll-sitemap'

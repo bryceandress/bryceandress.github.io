@@ -1,39 +1,24 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# My variables
+name: Micah Cowell
+description: cool web design
+google_analytics: UA-39119359-12
+google_verification: null
 
-# Site settings
-title: Bryce's Shenanigans
-email: bryceandress@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  A blog on my projects and write-ups
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://bryceandress.github.io" # the base hostname & protocol for your site
-twitter_username: bryceandress
-github_username:  bryceandress
-facebook_username: xxbryce10xx
 
-# Gems
-gems:
-- jekyll-archives
-- jekyll-paginate
+# File management
+include: [".htaccess"]
+exclude: ["README.md", "LICENSE"]
 
-# Config
-paginate: 5
-paginate_path: "page/:num"
-# Build settings
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+
+# Markdown
 markdown: kramdown
-
-# Archive
-jekyll-archives:
-  enabled: []
-  layout: 'archive'
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
