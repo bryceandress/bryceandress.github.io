@@ -5,14 +5,14 @@ layout: default
 {% include header.html %}
 
 <div class ="projects">
-  <h1> Projects:</h1>
-  <u1>
-    {% for projects in site.projects %}
-    <li>
-       <a href="{{website.url}}">{{ websites.url }}</a>
-    </li>
-    {% end for %}
-  </u1>
+    <h1>Projects:</h1>
+    <ul>
+        {% for projects in site.projects %}
+        <li>
+            <a href="{{website.url}}">{{ websites.url }}</a>
+        </li>
+        {% end for %}
+    </ul>
 </div>
 <div class="blog">
     <h1>Blog Posts:</h1>
