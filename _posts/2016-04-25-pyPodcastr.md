@@ -8,4 +8,4 @@ run with cron. pyPodcastr downloads the latest podcast from each RSS feed you gi
 it. The only dependency this project requires is feedparser which can be installed
 with pip3. If anyone would like any features or bugs worked out open up an issue. 
 Without further ado here is the Github 
-[repo](https://www.github.com/bryceandress/pyPodcastr
+[repo](https://www.github.com/bryceandress/pyPodcastr)
