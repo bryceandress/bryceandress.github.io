@@ -3,6 +3,17 @@ layout: default
 ---
 
 {% include header.html %}
+
+<div class ="projects">
+  <h1> Projects:</h1>
+  <u1>
+    {% for projects in site.projects %}
+    <li>
+       <a href="{{website.url}}">{{ websites.url }}</a>
+    </li>
+    {% endfor %}
+  </u1>
+</div>
 <div class="blog">
     <h1>Blog Posts:</h1>
     <ul>
