@@ -4,16 +4,17 @@ layout: default
 
 {% include header.html %}
 
-<div class ="projects">
+<div class="projects"</h1>
     <h1>Projects:</h1>
     <ul>
-        {% for websites in site.data.projects %}
+        {% for projects in site.data.projects %}
         <li>
-            <a href="{{ website.url }}">{{ websites.url }}</a>
+           <a href="{{ projects.url }}>{{ websites.url }}</a>
         </li>
-        {% end for %}
+        {% endfor %}
     </ul>
 </div>
+
 <div class="blog">
     <h1>Blog Posts:</h1>
     <ul>
