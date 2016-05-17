@@ -27,6 +27,7 @@ to wrap things up with a list of keyboard mods I plan on making, some of which I
 are even possible. Until my next post, adios.
 
 Keyboard Modifications:
+
 * Change keycaps. Most likely to a blue and gray  or a green and gray
 * Add a bluetooth adapter so I can pair it with my laptop without needing to bring the USB cable.
 * Get a Tux Key instead of having this God awfule Windows key staring at me all the time
