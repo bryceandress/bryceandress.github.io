@@ -16,10 +16,10 @@ the better part of the last two days trying to think of cool keyboard shortcuts 
 I have thought of a couple but have not implemented them yet, that will most likely be another
 blogpost. The few I have thought of include:
 
-*My email address on one of the keys
-*Move the arrow keys Fn+(I,J,K,L) to Fn+(A,S,D,W) so they are on the other side of the Fn key
-*Also might move them to Fn+(H,J,K,L) so it feels like I have Vim everywhere
-*Have a unique key for Reddit, GeekHack, Twitter, and Github
+* My email address on one of the keys
+* Move the arrow keys Fn+(I,J,K,L) to Fn+(A,S,D,W) so they are on the other side of the Fn key
+* Also might move them to Fn+(H,J,K,L) so it feels like I have Vim everywhere
+* Have a unique key for Reddit, GeekHack, Twitter, and Github
 
 As of right now I think this a pretty good summary of where I am at with this new board.
 I do believe this is going to turn into a very expensive hobby that I will really enjoy. I am going
@@ -27,7 +27,7 @@ to wrap things up with a list of keyboard mods I plan on making, some of which I
 are even possible. Until my next post, adios.
 
 Keyboard Modifications:
-*Change keycaps. Most likely to a blue and gray  or a green and gray
-*Add a bluetooth adapter so I can pair it with my laptop without needing to bring the USB cable.
-*Get a Tux Key instead of having this God awfule Windows key staring at me all the time
-*Get a USB cable to match the cap colors
+* Change keycaps. Most likely to a blue and gray  or a green and gray
+* Add a bluetooth adapter so I can pair it with my laptop without needing to bring the USB cable.
+* Get a Tux Key instead of having this God awfule Windows key staring at me all the time
+* Get a USB cable to match the cap colors
