@@ -25,3 +25,14 @@ layout: default
         {% endfor %}
     </ul>
 </div>
+
+<div class="lines">
+	<h1>Lines Committed:</h1>
+	<ul>
+	    {% for lines in site.data.lines %}
+			<li>
+			    {{ lines.name }}
+			</li>
+			{% endfor %}
+	</ul>
+</div>
