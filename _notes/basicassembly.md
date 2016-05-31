@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Basic Assembly
 ---
 
 # Registers
