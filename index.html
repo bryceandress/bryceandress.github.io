@@ -29,7 +29,7 @@ layout: default
 <div class="note">
     <h1>Notes:</h1>
     <ul>
-        {% for post in site.notes %}
+        {% for note in site.notes %}
         <li>
             <span class="date">{{ note.date | date: '%Y %b %d' }}</span> - <a href="{{ note.url }}">{{ note.title }}</a>
         </li>
