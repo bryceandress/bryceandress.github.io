@@ -26,6 +26,17 @@ layout: default
     </ul>
 </div>
 
+<div class="note">
+    <h1>Notes:</h1>
+    <ul>
+        {% for post in site.notes %}
+        <li>
+            <span class="date">{{ note.date | date: '%Y %b %d' }}</span> - <a href="{{ note.url }}">{{ note.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
 <div class="lines">
 	<h1>Lines Committed:</h1>
 	<ul>

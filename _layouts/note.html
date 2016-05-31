@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="note">
+    <a class="note__back" href="/">&lt;-- back</a>
+    <h1 class="note__title">{{ page.title }}</h1>
+    <p class="note__date">{{ page.date | date: '%B %-d, %Y' }}</p>
+    <div class="note__content"?>
+        {{ content }}
+    </div>
+</div>
