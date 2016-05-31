@@ -4,17 +4,6 @@ layout: default
 
 {% include header.html %}
 
-<div class="note">
-    <h1>Notes:</h1>
-    <ul>
-        {% for note in site.notes %}
-        <li>
-            <span class="date">{{ note.date | date: '%Y %b %d' }}</span> - <a href="{{ note.url }}">{{ note.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-
 <div class="portfolio">
     <h1>Projects:</h1>
     <ul>
@@ -36,6 +25,16 @@ layout: default
         {% endfor %}
     </ul>
 </div>
+
+<div class="note">
+    <h1>Notes:</h1>
+    <ul>
+        {% for note in site.notes %}
+        <li>
+            <span class="date">{{ note.date | date: '%Y %b %d' }}</span> - <a href="{{ note.url }}">{{ note.title }}</a>
+        </li>
+        {% endfor %}
+    </ul
 
 <div class="lines">
 	<h1>Lines Committed:</h1>
