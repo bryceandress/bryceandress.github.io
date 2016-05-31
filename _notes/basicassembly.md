@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 # Registers
 
 ESP = Stack Pointer
