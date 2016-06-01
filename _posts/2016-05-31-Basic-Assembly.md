@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: note
 title: Basic Assembly
-category
 ---
 
 # Registers
