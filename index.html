@@ -34,7 +34,7 @@ layout: default
         {% for post in site.posts %}
 					{% if post.layout == 'note' %}
           <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ note.title }}</a>
+            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
           </li>
 					{% endif %}
         {% endfor %}
