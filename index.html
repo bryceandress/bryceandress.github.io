@@ -5,7 +5,7 @@ layout: default
 {% include header.html %}
 
 <div class="portfolio">
-    <h1>Projects:</h1>
+    <h3>Projects:</h3>
     <ul>
         {% for websites in site.data.websites %}
         <li>
@@ -16,7 +16,7 @@ layout: default
 </div>
 
 <div class="blog">
-    <h1>Blog Posts:</h1>
+    <h3>Blog Posts:</h3>
     <ul>
         {% for post in site.posts %}
         <li>
@@ -27,7 +27,7 @@ layout: default
 </div>
 
 <div class="note">
-    <h1>Notes:</h1>
+    <h3>Notes:</h3>
     <ul>
         {% for note in site.notes %}
         <li>
@@ -37,7 +37,7 @@ layout: default
     </ul
 
 <div class="lines">
-	<h1>Lines Committed:</h1>
+	<h3>Lines Committed:</h3>
 	<ul>
 	    {% for lines in site.data.lines %}
 			<li>
@@ -46,3 +46,5 @@ layout: default
 			{% endfor %}
 	</ul>
 </div>
+
+
