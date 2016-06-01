@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title: Useful GDB Commands
 ---
 #Create a hook
