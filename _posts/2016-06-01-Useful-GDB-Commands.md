@@ -1,3 +1,7 @@
+---
+layout: post
+title: Useful GDB Commands
+---
 #Create a hook
 ```
 define hook-stop
