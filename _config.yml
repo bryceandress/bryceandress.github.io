@@ -15,4 +15,12 @@ sass:
   style: :compressed
   sass_dir: _sass
 
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
 future: true
