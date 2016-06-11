@@ -3,7 +3,7 @@ layout: note
 title: Basic Routing
 ---
 
-#Routing
+# Routing
 
 ## RIPv2:
 * Legacy, Link State is perferred
