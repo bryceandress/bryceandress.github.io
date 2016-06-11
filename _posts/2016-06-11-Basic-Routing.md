@@ -2,7 +2,9 @@
 layout: note
 title: Basic Routing
 ---
+
 #Routing
+
 ## RIPv2:
 * Legacy, Link State is perferred
 * Periodic updates - 30s
