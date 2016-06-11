@@ -15,3 +15,4 @@ sass:
   style: :compressed
   sass_dir: _sass
 
+future: true
