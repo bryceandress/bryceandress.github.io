@@ -4,12 +4,11 @@ title: Mr. Robot Vulnhub CTF
 ---
 
 Mr-Robot: 1 is a CTF vulnerable machine hosted on Vulnhub developed by [Jason](https://www.vulnhub.com/author/jason,292/)
-
 The image can be downloaded [here.](https://www.vulnhub.com/#modal151download)
 
-After firing up this machine I found the I.P. it pulled. I do this with an app for iOS devices called Fing but there are tons of other ways to do this.
+After firing up this machine I found the I.P. it pulled and started my investigation. I found the I.P. with an app for iOS devices called Fing but there are tons of other ways to do this.
 
-After firing it up I ran an Nmap scan to see which ports were open and got the following
+After locating the machine I ran an Nmap scan to see which ports were open and got the following
 
 ```
 $ nmap -T5 192.168.1.168
@@ -26,8 +25,9 @@ PORT    STATE  SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 15.96 seconds
 ```
 
-Goodie it looks like we have a website being hosted by this machine. After browsing to the site you will find a very nicely done webpage devoted
-to Mr-Robot that you can devulge a lot of time into but thats not where we want to focus. The first thing you should do when looking at a website
+
+Goodie it looks like we have a webserver. After browsing to the site you will find a very nicely done webpage devoted
+to Mr.Robot, or as some may know him Elliot, that you can devulge a lot of time into but thats not where we want to focus. The first thing you should do when looking at a website
 is always look at the robots.txt file and see what you're not supposed to see. If you do that on this machine you are given a webpage that has two
 pages, both of which we are going to visit.
 
@@ -37,10 +37,11 @@ First lets take a look at fsocity.dic, judging from the name this is probably a 
 wget 192.168.1.168/fsocity.dic
 ```
 
+
 Note: Your I.P. will probably be different.
 
-After that lets look at the much more promising page key-1-of-3.txt. Which believe it or not is the first of 3 keys we need to find. Browsing to the
-site we get **073403c8a58a1f80d943455fb30724b9**. Now that we have that key where do we go from here?
+After that lets look at the much more promising page key-1-of-3.txt. Which believe it or not is the first of 3 keys we need to find. Browsing to that location
+we get **073403c8a58a1f80d943455fb30724b9**. Now that we have our first key where do we go from here?
 
 Next I decided to fire up DirBuster to take a look around and see what other directories there were and maybe to see if we could figure out what this site was running on.
 
@@ -95,14 +96,14 @@ _______________________________________________________________
 [+] Memory used: 14.832 MB
 [+] Elapsed time: 08:28:21
 ```
+
+
 I ended with these results. I let it run over night or else you probably could have upped the threads to get this done faster.
 
-First glance it looks like elliot is must likely an admin of this blog which is great news for us. After browsing to appearance and
-themes I decided I am going to edit the archive.php page in hopes of adding a reverse shell.
-
+First glance it looks like elliot is most likely an admin of this blog which is great news for us. After browsing to appearance and
+themes I decided to edit the archive.php page in hopes of adding a reverse php shell.
 After going to this [page](http://pentestmonkey.net/tools/web-shells/php-reverse-shell) and
-grabbing the php reverse shell I pasted that in the archive.php page and changed the I.P. to
-mine. At this point I opened up the nc listener like the post says too and went to the page.
+grabbing the php reverse shell hosted there I opened up the nc listener like the post says too and went to the archive page.
 
 After doing this a reverse shell opened up in my terminal
 
@@ -120,9 +121,10 @@ daemon
 $
 ```
 
-After getting this shell I decided to checkout the home folder. After arriving here I saw the key-2 file and got very excited! However,
+
+After getting this shell I decided to checkout the home folder. After arriving here I saw the key-2-of-2.txt file and got very excited! However,
 after trying to cat it I realized I did not have permission to read it. I did notice there was a md5 password file for user robot (whos
-home directory we were in). After catting this file I decided to go to (http://www.md5cracker.org) and have them crack it. Luckily this
+home directory we were in). After catting this file I decided to go to [MD5cracker](http://www.md5cracker.org) and have them crack it. Luckily this
 only took seconds and I got the password of
 
 ```
@@ -131,6 +133,7 @@ abcdefghijklmnopqrstuvwxyz
 So at this point I tried to su robot and kept getting a not in terminal error. I figured this had something to do with TTY so I did a quick
 google search that led me to another article on pentestmonkey with a python command to open up a terminal. Below is going to be the log of
 everything I did to get key to after gaining access to the machine besides the cracking of the md5 hash since that was not done in the terminal
+
 
 ```
 $ nc -lvnp 1234
@@ -156,6 +159,7 @@ cat key-2-of-3.txt
 robot@linux:~$
 ```
 
+
 After searching around the box a bit and looking at the SUID binaries I remembered an old flaw with Nmap that allowed a user to execute commands as
 root in interactive mode. After launching the interactive mode you can enter !sh to gain a shell. At this point I navigated to the root directory
 catted the key-3-of-3.txt file and got the final key. Below will be a log of everything I did after getting the second key.
@@ -176,6 +180,8 @@ cat key-3-of-3.txt
 #
 ```
 
-That just about wraps up this Vulnhub image. Hopefully everyone enjoys my first writeup for an image. I am still fairly new at CTFs and boot2root
-machines but I plan on doing a lot more of these and to continue writing writeups! Thanks everyone for reading and if your interested in some security
+
+That just about wraps up this Vulnhub image. Hopefully everyone enjoys my first writeup for Vulnhub. I am still fairly new at CTFs and boot2root
+machines but I plan on doing a lot more of these and to continue writing writeups! If anyone has any suggestions on
+what they would like done differently for these writeups please let me know. Thanks everyone for reading and if your interested in some security
 content check out my twitter or the rest of my blog.
