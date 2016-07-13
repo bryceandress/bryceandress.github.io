@@ -42,3 +42,5 @@ and going to http://yourip/GameBoy-Online
 This concludes this quick little tutorial and hopefully everyone can now enjoy their
 favorite GameBoy games in their browser.
 
+If you do not want to go through the process of setting this up feel
+free to use [mine.](http://104.131.54.214/GameBoy-Online/)
