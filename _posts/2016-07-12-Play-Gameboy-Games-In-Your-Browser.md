@@ -14,6 +14,7 @@ Apache which can be done with.
 
 ```
 sudo apt-get install apache2
+
 ```
 
 After Apache is installed you may want to create a user just for your web directory if
