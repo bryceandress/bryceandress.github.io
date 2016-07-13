@@ -1,7 +1,7 @@
-```
+---
 layout: post
 title: Play GameBoy Games in Your Browser
-```
+---
 This tutorial is going to teach you how to setup a GameBoy emulator that runs in your
 browser. First things first you are going to need a box to host this on. I personally
 am using a $5 a month DigitalOcean droplet running Ubuntu 16.04 and that is what this
