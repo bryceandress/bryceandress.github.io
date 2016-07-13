@@ -11,6 +11,7 @@ Windows but with heavy modifications.
 After heading over to DigitalOcean follow this [guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
  to setup and secure your machine. After that is complete you will want to install
 Apache which can be done with.
+
 ```
 sudo apt-get install apache2
 ```
