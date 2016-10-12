@@ -31,7 +31,7 @@ This is a rather simple challenge. When you look at the scoreboard it wants <scr
 
 **Log into Admin Account without SQLi:**
 
-For this challenge we are going to harness the power of Burp Intruder again. Inside the positions tab edit the request so this time it says admin@juice-sh.op and make the password variable. Then go into the payloads tab load your fuzzdb clone and use the list of banned twitter passwords (If you need it email me) and fire away. Itll take a couple minutes but you will eventually get a 200 request with the result being password123.
+For this challenge we are going to harness the power of Burp Intruder again. Inside the positions tab edit the request so this time it says admin@juice-sh.op and make the password variable. Then go into the payloads tab load your fuzzdb clone and use the list of banned twitter passwords (If you need it email me) and fire away. Itll take a couple minutes but you will eventually get a 200 request with the result being admin123.
 
 
 TO BE CONTINUED.
