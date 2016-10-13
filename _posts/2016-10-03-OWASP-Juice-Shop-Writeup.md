@@ -7,33 +7,33 @@ Hello all, it has been quite a while since I posted a writeup on anything so tod
 This is a newer VM put out by OWASP that includes vulnerabilities from their top 10 list. I am going to start with the first one on the 
 scoreboard which is insanely easy! 
 
-**Scoreboard:**
+#Scoreboard:
 
 Juice Shop comes with a scoreboard but it is not easily accessible from somewhere on the website. In order to get this challenge you need 
 read through the source on the homepage and about 2/3 of the way down you will find a commented out link which brings you to the 
 scoreboard gaining you your first points.
 
-**Provoke and Error:**
+#Provoke and Error:
 
 This challenge is second the scoreboard and just like the first very easy to solve. After a little searching I decided to search with a 
 leading ' I threw some junk behind it and ended up with 'adk312fd triggering the scoreboard to award me the points. I believe this could be accomplished with just the ' or anything after it but I need to reset the machine to find out for sure.
 
-**Log into Admin Account:**
+#Log into Admin Account:
 
 This is the first real "hacking" challenge but is still not incredibly difficult. To solve this one I fired up burp and captured a test b
 post packet. I then went to the intruder tab and editted the positionis to just the email. I then went to payloads and passed it the 
 fuzzdb xplatform.txt file. Let intruder do its thing and you eventually get a 200 response with a' or 1=1 You can then use this on the 
 web form and get the admin scoreboard to trigger.
 
-**XSS Tier 1:**
+#XSS Tier 1:
 
 This is a rather simple challenge. When you look at the scoreboard it wants <script>alert("XSS1")</script> to execute. Normally for xss you place it in some input area for this challenge I chose the search bar and that executed it. I am sure there are some other places on the site to also do this.
 
-**Log into Admin Account without SQLi:**
+#Log into Admin Account without SQLi:
 
 For this challenge we are going to harness the power of Burp Intruder again. Inside the positions tab edit the request so this time it says admin@juice-sh.op and make the password variable. Then go into the payloads tab load go to /usr/share/dirb/big.txt  (If you need it email me) and fire away. Itll take a couple minutes but you will eventually get a 200 request with the result being admin123.
 
-**Give a Devastating 0 Star Review & Leave a Review with Someone Elses Account:**
+#Give a Devastating 0 Star Review & Leave a Review with Someone Elses Account:
 
 I decided to combine these 2 challenges because they are pretty similiar and why would you want to tamper with a site with your own account? So to get this one rolling you need to go back to the website go to the Feedback tab and leave a review with any stars and with your email (admin). Then go into Burp and send the packet you just sent to the Juice Shop to repeater by right clinking and clicking Send to Repeater. Once in repeater go ahead and edit the id from 0 to 1 and the stars to 0. Then go ahead and send this packet. If you go back to the site you should see the notifications for both challenges.
 
