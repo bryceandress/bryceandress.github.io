@@ -41,5 +41,6 @@ I decided to combine these 2 challenges because they are pretty similiar and why
 
 Following suit with the packet injections this one you make a request to your basket. Then go into Burp find that packet send it to repeater and modify the GET request from /rest/basket/1 to /rest/basket/2 and hit Go. If you go back to Juice-Shop you should have the notification waiting for you that you got the challenge.
 
-If you have any questions or need further explanation on any challenges please let me know
-TO BE CONTINUED.
+#If you have any questions or need further explanation on any challenges please let me know
+
+#TO BE CONTINUED.
