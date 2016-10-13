@@ -41,6 +41,10 @@ I decided to combine these 2 challenges because they are pretty similiar and why
 
 Following suit with the packet injections this one you make a request to your basket. Then go into Burp find that packet send it to repeater and modify the GET request from /rest/basket/1 to /rest/basket/2 and hit Go. If you go back to Juice-Shop you should have the notification waiting for you that you got the challenge.
 
+#Place an order that makes you rich
+
+I believe I did this challenge wrong but hey it works. So add a bunch of items to your cart. Then go into Burp and look at one of the requests. There will be a quantity, change this value to a very small negative number like -100000 and forward the packet. Now forwarding the packet should just place it in your basket but mine actually redirected me to past the checkout button where you get your receipt. I am not sure if this was designed or I found another bug. Regardless you should be able to press Checkout after changing the quantity and get the correct result.
+
 #If you have any questions or need further explanation on any challenges please let me know
 
 #TO BE CONTINUED.
