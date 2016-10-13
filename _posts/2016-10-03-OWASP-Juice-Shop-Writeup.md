@@ -37,5 +37,9 @@ For this challenge we are going to harness the power of Burp Intruder again. Ins
 
 I decided to combine these 2 challenges because they are pretty similiar and why would you want to tamper with a site with your own account? So to get this one rolling you need to go back to the website go to the Feedback tab and leave a review with any stars and with your email (admin). Then go into Burp and send the packet you just sent to the Juice Shop to repeater by right clinking and clicking Send to Repeater. Once in repeater go ahead and edit the id from 0 to 1 and the stars to 0. Then go ahead and send this packet. If you go back to the site you should see the notifications for both challenges.
 
+#Access Someone Else's Basket
+
+Following suit with the packet injections this one you make a request to your basket. Then go into Burp find that packet send it to repeater and modify the GET request from /rest/basket/1 to /rest/basket/2 and hit Go. If you go back to Juice-Shop you should have the notification waiting for you that you got the challenge.
+
 If you have any questions or need further explanation on any challenges please let me know
 TO BE CONTINUED.
