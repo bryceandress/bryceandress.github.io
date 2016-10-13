@@ -33,5 +33,9 @@ This is a rather simple challenge. When you look at the scoreboard it wants <scr
 
 For this challenge we are going to harness the power of Burp Intruder again. Inside the positions tab edit the request so this time it says admin@juice-sh.op and make the password variable. Then go into the payloads tab load go to /usr/share/dirb/big.txt  (If you need it email me) and fire away. Itll take a couple minutes but you will eventually get a 200 request with the result being admin123.
 
+** Give a Devastating 0 Star Review & Leave a Review with Someone Elses Account:**
 
+I decided to combine these 2 challenges because they are pretty similiar and why would you want to tamper with a site with your own account? So to get this one rolling you need to go back to the website go to the Feedback tab and leave a review with any stars and with your email (admin). Then go into Burp and send the packet you just sent to the Juice Shop to repeater by right clinking and clicking Send to Repeater. Once in repeater go ahead and edit the id from 0 to 1 and the stars to 0. Then go ahead and send this packet. If you go back to the site you should see the notifications for both challenges.
+
+If you have any questions or need further explanation on any challenges please let me know
 TO BE CONTINUED.
