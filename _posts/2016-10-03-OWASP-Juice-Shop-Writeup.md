@@ -27,7 +27,7 @@ web form and get the admin scoreboard to trigger.
 
 #XSS Tier 1:
 
-This is a rather simple challenge. When you look at the scoreboard it wants <script>alert("XSS1")</script> to execute. Normally for xss you place it in some input area for this challenge I chose the search bar and that executed it. I am sure there are some other places on the site to also do this.
+This is a rather simple challenge. When you look at the scoreboard it wants `<script>alert("XSS1")</script>` to execute. Normally for xss you place it in some input area for this challenge I chose the search bar and that executed it. I am sure there are some other places on the site to also do this.
 
 #Log into Admin Account without SQLi:
 
