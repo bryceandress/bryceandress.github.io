@@ -45,6 +45,13 @@ Following suit with the packet injections this one you make a request to your ba
 
 I believe I did this challenge wrong but hey it works. So add a bunch of items to your cart. Then go into Burp and look at one of the requests. There will be a quantity, change this value to a very small negative number like -100000 and forward the packet. Now forwarding the packet should just place it in your basket but mine actually redirected me to past the checkout button where you get your receipt. I am not sure if this was designed or I found another bug. Regardless you should be able to press Checkout after changing the quantity and get the correct result.
 
+#Access a Hidden File, find the Easter Egg, Access a Salesman's Backup, and Access a Developer's Backup 
+I grouped all these challenges together because they all follow the same basic format. First we need to do something you should normally do in the beginning and that is ennumerate the website. To do this I ran the command dirb http://127.0.0.1:3000. This gave me a result of all the hidden directories on the server. Browsing to 127.0.0.1:3000/ftp (which was a result) brings us to a page which lists a bunch of files. You can access legal.md and acquisitions.md but all the other files you get errors. At this point if you were to look at the scoreboard you would see that you have scored the Access a Hidden File challenge but known of the others. 
+
+This is where a technique called Null-Byte Injection comes in. To do this you click on a file, lets say eastere.gg. It will bring you to an error page, this is alright. Now go to the url bar and add %2500.pdf and you should be able to download a copy of eastere.gg. If you go to the scoreboard now you will see you scored the Easter Egg challenge. Do this for the rest of the files on the ftp page and you will also get Access a Salesman's Backup and Access a Developer's Backup. 
+
+
+
 #If you have any questions or need further explanation on any challenges please let me know
 
 #TO BE CONTINUED.
