@@ -50,7 +50,9 @@ I grouped all these challenges together because they all follow the same basic f
 
 This is where a technique called Null-Byte Injection comes in. To do this you click on a file, lets say eastere.gg. It will bring you to an error page, this is alright. Now go to the url bar and add %2500.pdf and you should be able to download a copy of eastere.gg. If you go to the scoreboard now you will see you scored the Easter Egg challenge. Do this for the rest of the files on the ftp page and you will also get Access a Salesman's Backup and Access a Developer's Backup. 
 
+# Advanced Cryptoanalysis on Easter Egg
 
+This challenge requires the eastere.gg file from the previous challenge and basic understanding of cryptography. Looking at the hash they gave us it is easy to see it is base64 because of the == at the end. Once you decrypt this you have a string that looks like a web address but when you throw it at the server it results in a path that is not found. Since this is a single * challenge I decided it is probably a super easy cipher and I decided to throw it at xarg.org/tools/ceasar-cipher doing this returns the correct server address that scores this challenge.
 
 # If you have any questions or need further explanation on any challenges please let me know
 
